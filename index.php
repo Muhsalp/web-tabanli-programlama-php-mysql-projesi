@@ -189,8 +189,7 @@ echo "</tbody></table></div></div>";
 }
 
 }else{
-echo "
-<div class='form-container'>
+echo "<div class='form-container'>
 <div class='mdc-tab-bar' role='tablist'>
 <div class='mdc-tab-scroller'>
 <div class='mdc-tab-scroller__scroll-area'>
