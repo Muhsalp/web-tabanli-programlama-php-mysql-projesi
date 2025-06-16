@@ -45,34 +45,7 @@ echo "<header class='mdc-top-app-bar mdc-elevation--z4'><div class='mdc-top-app-
 
 if(isset($_SESSION["kullanici"])){
 $kisi = $_GET["kisi"] ?? "";
-echo "<div class='form-section'>
-<form class='form-group' action='?s=kisiekle' method='post'>
-<h2>Kişi Ekle</h2>
-<label class='mdc-text-field mdc-text-field--outlined'>
-<input type='text' class='mdc-text-field__input' id='adsoyad' name='adsoyad'>
-<span class='mdc-notched-outline'>
-<span class='mdc-notched-outline__leading'></span>
-<span class='mdc-notched-outline__notch'>
-<span class='mdc-floating-label'>Ad Soyad</span>
-</span>
-<span class='mdc-notched-outline__trailing'></span>
-</span>
-</label>
-<label class='mdc-text-field mdc-text-field--outlined'>
-<input type='tel' class='mdc-text-field__input' id='telefon' name='telefon'>
-<span class='mdc-notched-outline'>
-<span class='mdc-notched-outline__leading'></span>
-<span class='mdc-notched-outline__notch'>
-<span class='mdc-floating-label'>Telefon</span>
-</span>
-<span class='mdc-notched-outline__trailing'></span>
-</span>
-</label>
-<button class='mdc-button mdc-button--raised'>
-<span class='mdc-button__ripple'></span>
-<span class='mdc-button__label'>Ekle</span>
-</button>
-</form>";
+echo "<div class='form-section'>";
 if($kisi){
 echo "<form class='form-group' action='?s=borcekle&kisi=$kisi' method='post'>
 <h2>Borç Ekle</h2>
@@ -124,6 +97,34 @@ echo "<form class='form-group' action='?s=borcekle&kisi=$kisi' method='post'>
 <span class='mdc-notched-outline__leading'></span>
 <span class='mdc-notched-outline__notch'>
 <span class='mdc-floating-label'>Not</span>
+</span>
+<span class='mdc-notched-outline__trailing'></span>
+</span>
+</label>
+<button class='mdc-button mdc-button--raised'>
+<span class='mdc-button__ripple'></span>
+<span class='mdc-button__label'>Ekle</span>
+</button>
+</form>";
+}else{
+echo "<form class='form-group' action='?s=kisiekle' method='post'>
+<h2>Kişi Ekle</h2>
+<label class='mdc-text-field mdc-text-field--outlined'>
+<input type='text' class='mdc-text-field__input' id='adsoyad' name='adsoyad'>
+<span class='mdc-notched-outline'>
+<span class='mdc-notched-outline__leading'></span>
+<span class='mdc-notched-outline__notch'>
+<span class='mdc-floating-label'>Ad Soyad</span>
+</span>
+<span class='mdc-notched-outline__trailing'></span>
+</span>
+</label>
+<label class='mdc-text-field mdc-text-field--outlined'>
+<input type='tel' class='mdc-text-field__input' id='telefon' name='telefon'>
+<span class='mdc-notched-outline'>
+<span class='mdc-notched-outline__leading'></span>
+<span class='mdc-notched-outline__notch'>
+<span class='mdc-floating-label'>Telefon</span>
 </span>
 <span class='mdc-notched-outline__trailing'></span>
 </span>
