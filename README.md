@@ -11,6 +11,9 @@ Borç verdiğiniz kişileri, ne zaman ne kadar borç verdiğinizi, ne zaman ne k
 ---
 ![Görüntü 2](goruntu/goruntu2.png)
 
+## Uygulamanın Kullanımını Gösteren Video
+[youtube.com/watch?v=d1yiy4Y8y_8](https://youtube.com/watch?v=d1yiy4Y8y_8)
+
 ## Özellikler
 - Kaydolma
 - Giriş yapma
